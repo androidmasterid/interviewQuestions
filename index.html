@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container-fluid">
+
+            <div class="text-center">
+                <h3>REACT NATIVE</h3>
+            </div>
+
+            <div class="d-flex p-1 bg-dark text-black">
+                <div class="card" data-toggle="modal" data-target="#hOC">
+                    <div class="card-body">
+                        <h6>Higher Order Components (HOC)</h6>
+                    </div>
+                </div>
+
+                <div class="card" data-toggle="modal" data-target="#aPI">
+                    <div class="card-body">
+                        <h6>API in React Native</h6>
+                    </div>
+                </div>
+
+                <div class="card" data-toggle="modal" data-target="#component">
+                    <div class="card-body">
+                        <h6>Function & Class Component</h6>
+                    </div>
+                </div>
+
+                <div class="card" data-toggle="modal" data-target="#stackNavigation">
+                    <div class="card-body">
+                        <h6>Stack Navigator </h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Higher Order Components (HOC)</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Higher Order Components (HOC)</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+
+        <div class="modal fade" id="hOC">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> Higher-order components</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <ul>
+                            <li>Higher-order component is a function that takes (wraps) component and returns a new
+                                component.</li>
+                            <li>Higher-order components are pure functions that take components and return new
+                                components.</li>
+
+                            <li>The main purpose of a higher-order component in React is to share common functionality
+                                between components without repeating code.</li>
+
+                            <h6>Types of Higher-Order Components</h6>
+
+                            <ul>
+                                <li>Props Proxy (ppHOC)</li>
+                                <li>Inheritance Inversion (iiHOC)</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="aPI">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> How call web API in React native</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul>
+                            <li>The following code shows an example of how we can call a Web API in React Native:</li>
+                        </ul>
+                        <img src="./assets/howAPI.png" alt="" width="500">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="component">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+
+                    <div class="d-flex justify-content-xl-around">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Class Component</h4>
+                        </div>
+
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Functional Component</h4>
+
+                        </div>
+                    </div>
+
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+
+
+                    <!-- Modal body -->
+
+                    <div class="d-flex justify-content-xl-around">
+
+                        <div class="modal-body">
+                            <ul>
+                                <li> Stateful components
+                                </li>
+                                <li>It must have the render() method returning HTML</li>
+                                <li>It requires different syntax inside a class component to implement hooks.</li>
+                                <li>Constructor are used as it needs to store state.</li>
+                                <li>EX-</li>
+                                <code>
+                                    <pre class=" language-js"><code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+                                        <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                            <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                                                <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>Hello World<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+                                            <span class="token punctuation">)</span>
+                                        <span class="token punctuation">}</span>
+                                    <span class="token punctuation">}</span></code></pre>
+                                </code>
+
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="modal-body">
+                            <ul>
+                                <li>Stateless components
+                                </li>
+                                <li>There is no render method used in functional components.</li>
+                                <li>Hooks can be easily used in functional components.</li>
+                                <li>Constructors are not used .</li>
+                                <li>EX-</li>
+                                <code class=" language-js"><span class="token keyword">const</span> <span class="token function-variable function">PageOne</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">return</span> <span class="token punctuation">(</span>
+                                    <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Page One<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+                                    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                <br><span class="token punctuation">}</span></code>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="stackNavigation">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> How do you create a stackNavigator</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul>
+                            <li>Here’s how to create stackNavigator in React Native:</li>
+                        </ul>
+                        <img src="./assets/stackNavigator.png" alt="" width="500">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="memoryLeak">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> How do you create a stackNavigator</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul>
+                            <li>Well, the main reason for the memory leak issue is updating the state endlessly.</li>
+                        </ul>
+                        <img src="./assets/stackNavigator.png" alt="" width="500">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
